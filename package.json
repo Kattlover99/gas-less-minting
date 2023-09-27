@@ -1,0 +1,29 @@
+{
+  "name": "gasless-mint",
+  "version": "1.0.0",
+  "description": "An example solidity contract and node.js app to \"lazily\" mint NFTs at point of sale",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test ./test/gasless-test.js",
+    "test-mint": "npx hardhat test ./test/test-mint.js",
+    "deploy": "npx hardhat run ./scripts/deploy.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.1.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.4.1"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "dotenv": "^16.3.1",
+    "ethers-eip712": "^0.2.0"
+  }
+}
